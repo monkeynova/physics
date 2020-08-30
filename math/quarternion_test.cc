@@ -1,4 +1,5 @@
 #include "math/quarternion.h"
+
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
@@ -38,9 +39,4 @@ TEST(QuarternionTest, DebugString) {
   EXPECT_EQ(Q::k.DebugString(), "k");
   EXPECT_EQ(Q(1, 1, 1, 1).DebugString(), "1+i+j+k");
   EXPECT_EQ(Q(2, 2, 2, 2).DebugString(), "2+2i+2j+2k");
-}
-
-int main(int argc, char** argv) {
-  testing::InitGoogleTest(&argc, argv);
-  return RUN_ALL_TESTS();
 }
